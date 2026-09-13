@@ -1,0 +1,19 @@
+
+.tarjeta {
+  width: 300px;
+  padding: 15px;
+  border: 5px solid black;
+  margin: 20px;
+}
+p {
+  color: blue;
+}
+
+.destacado {
+  color: green;
+}
+
+
+#texto-principal {
+  color: red;
+}
