@@ -1,19 +1,33 @@
-
-.tarjeta {
-  width: 300px;
-  padding: 15px;
-  border: 5px solid black;
-  margin: 20px;
-}
-p {
-  color: blue;
+/* 1. El padre sirve de ancla */
+.carrito-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
 
-.destacado {
-  color: green;
+/* 2. El hijo flota respecto a las coordenadas del padre */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo a la izq, enlaces a la der */
+  align-items: center;            /* Centra verticalmente ambos elementos */
+  padding: 1rem 2rem;
 }
 
-
-#texto-principal {
-  color: red;
+.enlaces {
+  display: flex;
+  gap: 1.5rem;                   /* Espacio automático entre ítems del menú */
+  list-style: none;
+}
+.enlaces-activos {
+  font-weight: bold;
+  color: #007BFF;                /* Color azul para el enlace activo */
 }
